@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <form #userlogin = "ngForm"  (ngSubmit)="onSubmit(userlogin.value)">
+    <div class="container">
+      <h1>Register</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <div style="text-align: center;">
+      <label for="firstname"><b>Firstname</b></label>&nbsp;
+      <input type="text" placeholder="Enter firstname" name="firstName" id="firstname" ngModel>&nbsp;
+      
+      <label for="lastname"><b>Lastname</b></label>&nbsp;
+      <input type="text" placeholder="Enter lastname" name="lastName" id="lastname" ngModel >&nbsp;
+      <br>
+      <label for="courseName"><b>CourseName</b></label>&nbsp;
+      <input type="text" placeholder="Enter courseName" name="courseName" id="courseName" ngModel>&nbsp;
+  
+      <label for="dateOfBirth"><b>dateOfBirth</b></label>&nbsp;
+      <input type="date" placeholder="Enter dateOfBirth" name="dateOfBirth" id="dateOfBirth" ngModel>&nbsp;
+      <br>
+      <label for="gender"><b>Gender</b></label>&nbsp;
+      <input type="text" placeholder="Enter gender" name="gender" id="gender" ngModel>&nbsp;
+  
+      <label for="mobileNo"><b>MobileNo</b></label>&nbsp;
+      <input type="number" pattern="[0-9]{10}" placeholder="Enter number" name="mobileNo" id="mobileNo" ngModel>&nbsp;
+      <br>
+      <label for="address"><b>Address</b></label>&nbsp;
+      <input type="text" placeholder="Enter address" name="addres" id="address" ngModel>&nbsp;
+    </div>
+      <hr>
+      
+  
+      <button type="submit" class="registerbtn">Register</button>
+    </div>
+    
+    <div class="container signin">
+      <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </div>
+  </form>
+  
+  </body>
+  </html>

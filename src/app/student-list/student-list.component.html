@@ -1,0 +1,37 @@
+<h1>student-list</h1>
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<table id="customers">
+    <thead>
+  <tr>
+    <th>Id</th>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>CourseName</th>
+    <th>DateofBirt</th>
+    <th>Gender</th>
+    <th>MobileNo</th>
+    <th>Address</th>
+  </tr>
+</thead>
+<tbody>
+    <tr *ngFor =" let student of students">
+      <td>{{student.id}}</td>
+      <td>{{student.firstName}}</td>
+      <td>{{student.lastName}}</td>
+      <td>{{student.courseName}}</td>
+      <td>{{student.dateOfBirth}}</td>
+      <td>{{student.gender}}</td>
+      <td>{{student.mobileNo}}</td>
+      <td>{{student.addres}}</td>
+    </tr>
+  </tbody>  
+</table>
+
+</body>
+</html>
